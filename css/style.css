@@ -63,6 +63,20 @@ img {
   width: 100%;
 }
 
+img.resize {
+  max-width:15%;
+  max-height:15%;
+}
+img.resize-logo {
+  max-width:5%;
+  max-height:5%;
+}
+img.resize-footer {
+  max-width:2.5%;
+  max-height:2.5%;
+}
+
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #fd6860ff;
