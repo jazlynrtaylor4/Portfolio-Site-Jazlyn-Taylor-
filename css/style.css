@@ -4,37 +4,44 @@ Primary Color (light grey): #b3b3b3ff;
 Secondary Color (Coral): #fd6860ff;
 Tertiary Color (Black):#333333ff
 */
-
 header {
   background-color: #fd6860ff;
   padding: 10px;
   margin: 10px, 0 auto;
-  border-bottom: 2px solid #b3b3b3ff;]
-  position: absolute;
-  display:block;
+  border-bottom: 2px solid #b3b3b3ff;
+  ] position: absolute;
+  display: block;
   box-sizing: border-box;
   font-weight: 700;
   text-align: center;
+}
+nav {
+  margin-inline-start: -40px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px
 }
 
 body {
   background-color: #CDD6DD;
   font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #333333ff;
   padding: 10px;
   margin: 10px, 0 auto;
-  border-bottom: 2px solid #b3b3b3ff;]
-  position: absolute;
-  display:block
-
+  border-bottom: 2px solid #b3b3b3ff;
+  ] position: absolute;
+  display: block
 }
 
 h1, h2, h3, h4 {
   line-height: 1.5;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -49,6 +56,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 500;
 }
+
 h4 {
   font-size: 1.25em;
   font-weight: 400;
@@ -58,74 +66,96 @@ img {
   width: 100%;
 }
 
-a:visited { /* visited link */
-  color: #FE6860;
+a:visited {
+  /* visited link */
+  color: #333333ff;
 }
 
-a:active { /* selected link */
-  color: #994c30;
-
+a:active {
+  /* selected link */
+  color: #333333ff;
 }
+
 a:hover {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
 a:focus {
-  color: #cc6540;
+  color: #333333ff;
   text-decoration: underline;
 }
+
 img {
   width: 100%;
   padding: 10px;
   margin: 10px, 0 auto;
 }
-
+img.resize-splash {
+  max-width: 30%;
+  max-height: 30%;
+  padding: 10px;
+  margin: 10px, 0 auto;
+}
 img.resize {
-  max-width:15%;
-  max-height:15%;
+  max-width: 15%;
+  max-height: 15%;
   padding: 10px;
   margin: 10px, 0 auto;
 }
+
 img.resize-logo {
-  max-width:5%;
-  max-height:5%;
+  max-width: 5%;
+  max-height: 5%;
   padding: 10px;
   margin: 10px, 0 auto;
 }
+
 img.resize-footer {
-  max-width:2.5%;
-  max-height:2.5%;
+  max-width: 2.5%;
+  max-height: 2.5%;
   padding: 10px;
   margin: 10px, 0 auto;
 }
+
 img.resize-inkwell {
-  max-width:50%;
-  max-height:50%;
+  max-width: 50%;
+  max-height: 50%;
   padding: 10px;
   margin: 10px, 0 auto;
+}
+.col-md-6 {
+  width: 50%;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #fd6860ff;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #ffffff !important;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #fd6860ff !important;
   text-transform: uppercase;
   border: 2px solid #fd6860ff;
 }
+
 .button.contact:hover {
   background-color: #fd6860ff;
   color: #ffffff !important;
@@ -136,29 +166,111 @@ img.resize-inkwell {
   padding: 0 15px;
   max-width: 1200px;
   box-sizing: border-box;
-
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
+
+#hero span {
+  display: block;
+}
+
 .center {
   text-align: center;
-
 }
+
 .left {
   text-align: left;
-
 }
-.contact {text-align: center;
+
+.contact {
+  text-align: left;
 }
 
 #hero {
-background-color: #CCFBFE;
-padding: 20px 0;
-display: inline-block;
-width: 100%;
-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5;
+  background-color: #CCFBFE;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5;
+  }
+
+  /* ==============================
+Medium devices (640px and larger)
+================================= */
+  @media only screen and (min-width: 640px) {
+
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right margin-top: 4px;
+    }
+
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* ==============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right margin-top: 4px;
+    }
+
+    font-size: 18px;
+  }
+
+  /* ==============================
+X-large devices (1440px or larger)
+================================= */
+  @media only screen and (min-width: 1440px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right margin-top: 4px;
+    }
+
+    font-size: 18px;
+  }
+
+  /* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+  @media only screen and (min-width: 1920px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right margin-top: 4px;
+    }
+
+    font-size: 18px;
+  }
