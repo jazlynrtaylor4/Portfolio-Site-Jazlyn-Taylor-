@@ -180,8 +180,9 @@ img.resize-inkwell {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 25px 0;}
   /* 25px top and bottom, 0 left and right */
+
   .row::after {
   content: "";
   clear: both;
@@ -216,32 +217,22 @@ img.resize-inkwell {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
   }
 
-@keyframes cloud-move {
-from {
-transform: translate(0, 50px);
+  @keyframes color-change {
+  0% {fill: #9D4A8D;}
+  50% {fill: #FD4173;}
+  100% {fill: #fd6860ff;}
 }
 
-to {
-transform: translate(200px, 50px);
+.cat {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
-}
-
-
-.cloud-front {
-animation: 30s cloud-move infinite alternate linear;
-}
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
   /* ==============================
   Medium devices (640px and larger)
   ================================= */
