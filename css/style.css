@@ -13,7 +13,7 @@ header {
   display: block;
   box-sizing: border-box;
   font-weight: 700;
-  text-align: center;
+;
 }
 nav {
   margin-inline-start: -40px;
@@ -233,10 +233,39 @@ img.resize-inkwell {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
   /* ==============================
-  Medium devices (640px and larger)
+  Medium devices (641px and larger)
   ================================= */
-  @media only screen and (min-width: 640px) {
+  @media only screen and (min-width: 641px) {
 
 header {
     text-align: unset;
@@ -244,14 +273,32 @@ header {
   }
 nav {
     width: auto;
-    float: right
+    float: right;
     margin-top: 4px;
   }
+  nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
   .col-md-6 {
   width: 50%;
 }
 }
-
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
+main {
+  padding-top: 56px;
+}
   /* ==============================
 Large devices (1024px or larger)
 ================================= */
