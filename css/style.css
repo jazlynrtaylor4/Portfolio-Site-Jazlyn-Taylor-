@@ -7,17 +7,18 @@ Tertiary Color (Black):#333333ff
 header {
   background-color: #fd6860ff;
   padding: 10px;
-  margin: 10px, 0 auto;
+  margin: 10px;
   border-bottom: 2px solid #b3b3b3ff;
-  ] position: absolute;
+  position: absolute;
   display: block;
   box-sizing: border-box;
   font-weight: 700;
-;
+  min-width: 1200px
 }
+
 nav {
   margin-inline-start: -40px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   font-size: 16px
 }
 
@@ -32,11 +33,12 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #333333ff;
   padding: 10px;
-  margin: 10px, 0 auto;
+  margin: 10px;
   border-bottom: 2px solid #b3b3b3ff;
-  ] position: absolute;
+  position: absolute;
   display: block
 }
+
 
 h1, h2, h3, h4 {
   line-height: 1.5;
@@ -90,40 +92,41 @@ a:focus {
 img {
   width: 100%;
   padding: 10px;
-  margin: 10px, 0 auto;
+  margin: 10px;
 }
+
 img.resize-splash {
   max-width: 30%;
   max-height: 30%;
   padding: 10px;
-  margin: 10px, 0 auto;
+  margin: 10px;
 }
 img.resize {
   max-width: 15%;
   max-height: 15%;
   padding: 10px;
-  margin: 10px, 0 auto;
+margin: 10px;
 }
 
 img.resize-logo {
   max-width: 5%;
   max-height: 5%;
   padding: 10px;
-  margin: 10px, 0 auto;
+  margin: 10px;
 }
 
 img.resize-footer {
   max-width: 2.5%;
   max-height: 2.5%;
   padding: 10px;
-  margin: 10px, 0 auto;
+  margin: 10px;
 }
 
 img.resize-inkwell {
   max-width: 50%;
   max-height: 50%;
   padding: 10px;
-  margin: 10px, 0 auto;
+  margin: 10px;
 }
 .col-md-6 {
   width: 50%;
@@ -138,11 +141,12 @@ img.resize-inkwell {
   width: 60%;
 }
 
+
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #fd6860ff;
-  color: #ffffff !important;
+  color: #313131 !important;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -262,6 +266,7 @@ img.resize-inkwell {
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
 }
+
   /* ==============================
   Medium devices (641px and larger)
   ================================= */
