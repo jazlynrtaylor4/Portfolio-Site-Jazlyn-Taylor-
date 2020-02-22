@@ -1,4 +1,4 @@
-console.log("Hi there! Thanks for stopping by!")
+console.log('Hi there! Thanks for stopping by!'')
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
@@ -7,4 +7,3 @@ function menuToggle() {
     x.className = 'navtoggle';
   }
 }
-function onclick myFunction()

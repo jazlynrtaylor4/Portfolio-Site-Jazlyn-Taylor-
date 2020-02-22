@@ -13,7 +13,7 @@ header {
   display: block;
   box-sizing: border-box;
   font-weight: 700;
-  min-width: 1200px
+  min-width: 1390px
 }
 
 nav {
@@ -214,6 +214,8 @@ img.resize-inkwell {
 .contact {
   text-align: left;
 }
+#myNavtoggle
+
 
 #hero {
   background-color: #CCFBFE;
